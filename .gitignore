@@ -128,3 +128,7 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+#modificado pra incluir node js e Vs code
+node_modules
+.vscode
