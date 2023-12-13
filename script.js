@@ -15,6 +15,9 @@ setTimeout(mandaMensagem,5000)
 console.log("Tchau tchau!");*/
 
 
-var consultaCEP=fetch("https://viacep.com.br/ws/01001000/json").then(responta =>responta.json().then(r =>console.log(r)));
+var consultaCEP=fetch("https://viacep.com.br/ws/01001000/json")
+.then(responta =>responta.json())
+.then(r =>console.log(r));
 
-//console.log(consultaCEP);
+
+console.log(consultaCEP);
