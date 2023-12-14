@@ -3,27 +3,6 @@
 //use strick "encontra" os erros
 "use strick";
 /**console.log("Mandando oi pro amigo!");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*
 function mandaMensagem() {
 
@@ -63,10 +42,10 @@ async function buscarEndereco(cep) {
         console.log(erro)
     }
 }
+
+
 let ceps=['01001000','01001001'];
 let conjuntoCeps=ceps.map(valores => buscarEndereco(valores));
 Promise.all(conjuntoCeps).then(respostas => console.log(respostas));
 
 
-
-buscarEndereco()
