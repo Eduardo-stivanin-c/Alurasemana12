@@ -1,4 +1,12 @@
-const  getPerson=()=>{return{name:"Luna",eye:"blue",}}
+/*( () => {
+    
+    const  getPerson=()=>{return{name:"Luna",eye:"blue",}}
+    
+    
+    console.log(getPerson());
 
+}    
 
-console.log(getPerson());
+)()
+*/
+//autorodar da função

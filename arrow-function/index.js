@@ -30,10 +30,31 @@ else{
 console.log(sum(20,10,10));
 /*/
 //funça oanionima não pode serexecutada pelo consle o navegador por segurança contra ckackers
-function () {
+//função se autochama
+/*( () => {
 const  getPerson=()=>{return{name:"Henri",eye:"blue",}}
 
 
 console.log(getPerson());
 }
-();
+)
+()*/
+
+(()=>{
+    function Person() {
+        this.year=0;
+       // milisegundos
+        setInterval(function () {
+        
+            this.year=this.year +1
+            //this traduzido este
+            console.log("Qual this?" ,this );
+
+            console.log("Qual é a  idade?",this.year);
+
+        },1000)
+    }
+    const p1 = new Person();
+    const p2 = new Person();
+    
+})();
