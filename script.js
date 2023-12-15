@@ -59,12 +59,6 @@ return consultaCEPConvertida;
 
 
 
-
-
-
-
-
-
      catch (erro) {
         mensagemErro.innerHTML=`<p> CEP inválido</p>`
         console.log(erro)
