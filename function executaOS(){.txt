@@ -1,0 +1,9 @@
+function executaOS(){
+while(true){}
+console.log("Logs 01 ")
+console.log("Logs 02")
+console.log("Logs 03")
+console.log("Logs 04")
+}
+executaLogs()
+console.log("Logs 05")

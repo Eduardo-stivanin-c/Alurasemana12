@@ -26,6 +26,8 @@ console.log(consultaCEP);
 
 
 async function buscarEndereco(cep) {
+    var mensagemErro=document.getElementById('erro');
+
     try {
         
         var consultaCEP=await fetch(`https://viacep.com.br/ws/${cep}/json`)
@@ -36,15 +38,48 @@ async function buscarEndereco(cep) {
 
   
         }
-        console.log(consultaCEPConvertida)
+      //var cidade 
+      let cidade = document.getElementById('cidade');
+      let logradouro=document.getElementById('endereco');
+      let estado=document.getElementById('estado');
 
-    } catch (erro) {
+      cidade.value=consultaCEPConvertida.localidade;
+      estado.value=consultaCEPConvertida.uf
+
+logradouro.value=String(consultaCEPConvertida.logradouro);
+        
+
+
+console.log(consultaCEPConvertida)
+
+return consultaCEPConvertida;
+    }
+
+
+
+
+
+
+
+
+
+
+
+     catch (erro) {
+        mensagemErro.innerHTML=`<p> CEP inválido</p>`
         console.log(erro)
     }
 }
 
-
+/*
 let ceps=['01001000','01001001'];
 let conjuntoCeps=ceps.map(valores => buscarEndereco(valores));
 Promise.all(conjuntoCeps).then(respostas => console.log(respostas));
+
+*/
+
+var cep=document.getElementById('cep');
+cep.addEventListener('focusout',()=>buscarEndereco(cep.value))
+
+
 

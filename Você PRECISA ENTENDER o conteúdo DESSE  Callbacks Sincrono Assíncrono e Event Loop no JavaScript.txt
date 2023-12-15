@@ -1,0 +1,21 @@
+function pegarDados(funcao){
+    ///faz um ajaa ai
+    setTimeout(function(){
+        
+        
+    },2*1000)
+    
+    const dados={
+        nome:'mario'
+    }
+//funcao(dados)
+    
+}
+
+pegarDados(function (dados){
+    console.log('Dados:',dados)
+})
+//console.log('Alo alo w brazil')
+console.log('log 01')
+console.log('log 02')
+console.log('log 03')
