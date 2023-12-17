@@ -1,0 +1,1 @@
+let numero=Math.parseInt(Math.random() * 100)
